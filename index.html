@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NASA Meteor Madness — Live Impact Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌠 Meteor Madness: NASA Impact Simulator</h1>
+    <p>Objects near earth to there imapct on earth...</p>
+  </header>
+
+  <section id="game">
+    <canvas id="canvas" width="700" height="400"></canvas>
+    <div class="controls">
+      <div>
+        <label for="meteorSelect">Choose Real NASA NEO</label><br>
+        <select id="meteorSelect"></select>
+      </div>
+      <div style="align-self:end; display:flex; gap:8px">
+        <button id="drop">☄️ Simulate Impact</button>
+        <button id="massive" style="background:#ef4444;color:#fff">💥 Massive Strike</button>
+      </div>
+    </div>
+    <div class="info" id="info">Loading NEOs...</div>
+  </section>
+
+  <footer>Built for NASA Space Apps Hackathon — Live Near Earth Object Impact Visualizer</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

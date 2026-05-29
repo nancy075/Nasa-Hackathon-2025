@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050810;
+    color: #fff;
+    text-align: center;
+  }
+  
+  header {
+    padding: 20px;
+    background: #0f172a;
+    /* expose a CSS variable so JS or other styles can override the header foreground */
+    --header-foreground: #6ee7b7;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 28px;
+    color: var(--header-foreground, #6ee7b7);
+    transition: color 180ms ease-in-out;
+  }
+  
+  #game {
+    margin: 20px auto;
+    max-width: 900px;
+    background: #111827;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,.6);
+  }
+  
+  canvas {
+    background: #0a0f1a;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  select {
+    width: 250px;
+    padding: 5px;
+    border-radius: 6px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #9ca3af;
+  }
+  
+  button {
+    background: #6ee7b7;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #34d399;
+  }
+  
+  .info {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #facc15;
+  }
+  
+  footer {
+    margin-top: 30px;
+    color: #9ca3af;
+    font-size: 12px;
+  }
+  
